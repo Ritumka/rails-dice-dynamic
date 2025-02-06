@@ -1,0 +1,6 @@
+<h1><%= "#{@random_dice}d#{@random_sides}" %></h1>
+<ul>
+  <% @random_dice.times do %>
+  <li><%= rand(1..@random_sides) %></li>
+  <% end %>
+</ul>
